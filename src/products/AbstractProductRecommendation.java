@@ -1,7 +1,5 @@
 package products;
 
-import products.meta.Product;
-
 import java.util.Collection;
 
 /**

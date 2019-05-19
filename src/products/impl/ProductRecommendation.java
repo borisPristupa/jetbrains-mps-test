@@ -3,7 +3,7 @@ package products.impl;
 import products.AbstractAdditionalProduct;
 import products.AbstractMainProduct;
 import products.AbstractProductRecommendation;
-import products.meta.Product;
+import products.Product;
 
 import java.util.Collection;
 import java.util.Set;

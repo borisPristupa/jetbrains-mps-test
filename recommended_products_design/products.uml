@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="462.0">products.AbstractProductRecommendation</node>
+    <node x="14.25" y="227.0">products.AbstractAdditionalProduct</node>
+    <node x="200.625" y="80.5">products.meta.ProductContainer</node>
+    <node x="0.0" y="80.0">products.RatedProduct</node>
+    <node x="10.875" y="387.0">products.AbstractMainProduct</node>
+    <node x="86.375" y="307.0">products.AdditionalProductContainer</node>
+    <node x="117.0" y="0.0">products.meta.Product</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="products.AbstractMainProduct" target="products.RatedProduct">
+      <point x="-53.25" y="-15.0" />
+      <point x="64.125" y="362.0" />
+      <point x="3.75" y="362.0" />
+      <point x="3.75" y="202.0" />
+      <point x="37.75" y="202.0" />
+      <point x="-37.75" y="48.5" />
+    </edge>
+    <edge source="products.RatedProduct" target="products.meta.Product">
+      <point x="0.0" y="-48.5" />
+      <point x="75.5" y="55.0" />
+      <point x="143.75" y="55.0" />
+      <point x="-26.75" y="15.0" />
+    </edge>
+    <edge source="products.AdditionalProductContainer" target="products.meta.ProductContainer">
+      <point x="68.5" y="-15.0" />
+      <point x="291.875" y="282.0" />
+      <point x="295.125" y="282.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="products.AdditionalProductContainer" target="products.AbstractAdditionalProduct">
+      <point x="-68.5" y="-15.0" />
+      <point x="154.875" y="282.0" />
+      <point x="147.25" y="282.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="products.AbstractAdditionalProduct" target="products.RatedProduct">
+      <point x="0.0" y="-15.0" />
+      <point x="147.25" y="202.0" />
+      <point x="113.25" y="202.0" />
+      <point x="37.75" y="48.5" />
+    </edge>
+    <edge source="products.AbstractMainProduct" target="products.AdditionalProductContainer">
+      <point x="53.25" y="-15.0" />
+      <point x="170.625" y="362.0" />
+      <point x="223.375" y="362.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="products.meta.ProductContainer" target="products.meta.Product">
+      <point x="0.0" y="-48.0" />
+      <point x="295.125" y="55.0" />
+      <point x="197.25" y="55.0" />
+      <point x="26.75" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8220973782771536" x="580.0" y="219.50000000000003" />
+  <SelectedNodes>
+    <node>products.AbstractProductRecommendation</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

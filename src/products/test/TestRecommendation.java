@@ -23,23 +23,23 @@ class TestRecommendation {
                 a2 = new AdditionalProduct(2),
                 a3 = new AdditionalProduct(3);
 
-        List<Product> ratedProducts = Arrays.asList(
+        List<Product> productsInCart = Arrays.asList(
                 new MainProduct(4) {{
-                    addProduct(a1);
-                    addProduct(a2);
+                    addProduct(a1); // should be added to recommendation
+                    addProduct(a2); // should be added to recommendation
                 }},
                 new MainProduct(5) {{
-                    addProduct(b1);
+                    addProduct(b1); // should be added to recommendation
                 }},
-                a3,
+                a3, // should be excluded from recommendation
                 new MainProduct(6) {{
-                    addProduct(a3);
-                    addProduct(a1);
+                    addProduct(a3); // has been excluded
+                    addProduct(a1); // should be added to recommendation
                 }},
                 new MainProduct(7)
         );
 
-        assert recommendation.getRecommendation(ratedProducts)
+        assert recommendation.getRecommendation(productsInCart)
                 .equals(new HashSet<>(Arrays.asList(a1, a2, b1)));
     }
 
